@@ -2,8 +2,10 @@
 // НАСТРОЙКА N8N
 // ======================================
 
+
 const N8N_WEBHOOK_URL =
-    "https://introducing-are-our-minerals.trycloudflare.com/webhook/plumbing-lead";
+    "https://dpi-jacket-downloaded-equal.trycloudflare.com/webhook/plumbing-lead";
+
 
 // ======================================
 // ЦЕНЫ
