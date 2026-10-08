@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Калькулятор сантехнических работ</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Фоновый эффект -->
+    <div class="background-glow"></div>
+
+    <main class="container">
+
+        <!-- HERO -->
+
+        <header class="hero">
+
+            <div class="hero-badge">
+                🔧 САНТЕХНИЧЕСКИЕ РАБОТЫ
+            </div>
+
+            <h1>
+                Рассчитайте стоимость
+                <span>сантехнических работ</span>
+            </h1>
+
+            <p>
+                Выберите необходимые работы и получите
+                предварительный расчёт стоимости за несколько минут.
+            </p>
+
+            <div class="hero-features">
+
+                <div>
+                    ✓ Быстрый расчёт
+                </div>
+
+                <div>
+                    ✓ Без скрытых платежей
+                </div>
+
+                <div>
+                    ✓ Выезд специалиста
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- КАЛЬКУЛЯТОР -->
+
+        <section class="calculator-section">
+
+            <div class="section-title">
+
+                <span>
+                    ШАГ 1
+                </span>
+
+                <h2>
+                    Расскажите об объекте
+                </h2>
+
+                <p>
+                    Это поможет сделать расчёт точнее.
+                </p>
+
+            </div>
+
+
+            <div class="calculator-card">
+
+
+                <!-- ТИП ОБЪЕКТА -->
+
+                <div class="form-block">
+
+                    <label>
+                        🏠 Тип объекта
+                    </label>
+
+                    <div class="choice-grid">
+
+                        <label class="choice">
+
+                            <input
+                                type="radio"
+                                name="object"
+                                value="apartment"
+                                checked
+                            >
+
+                            <span>
+                                🏢
+                                <strong>Квартира</strong>
+                                <small>Новостройка или вторичка</small>
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice">
+
+                            <input
+                                type="radio"
+                                name="object"
+                                value="house"
+                            >
+
+                            <span>
+                                🏡
+                                <strong>Частный дом</strong>
+                                <small>Дом или коттедж</small>
+                            </span>
+
+                        </label>
+
+
+                        <label class="choice">
+
+                            <input
+                                type="radio"
+                                name="object"
+                                value="commercial"
+                            >
+
+                            <span>
+                                🏢
+                                <strong>Коммерция</strong>
+                                <small>Офис, магазин и т.д.</small>
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ПЛОЩАДЬ -->
+
+                <div class="form-block">
+
+                    <label for="area">
+                        📐 Площадь помещения
+                    </label>
+
+                    <div class="input-with-unit">
+
+                        <input
+                            type="number"
+                            id="area"
+                            min="1"
+                            placeholder="Например, 60"
+                        >
+
+                        <span>м²</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- САНТЕХНИКА -->
+
+                <div class="form-block">
+
+                    <label>
+                        🚿 Какие работы необходимы?
+                    </label>
+
+                    <div class="services-grid">
+
+
+                        <label class="service">
+
+                            <input
+                                type="checkbox"
+                                id="toilet"
+                            >
+
+                            <span class="service-icon">
+                                🚽
+                            </span>
+
+                            <span class="service-info">
+
+                                <strong>
+                                    Установка унитаза
+                                </strong>
+
+                                <small>
+                                    от 15 000 ₸
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="service">
+
+                            <input
+                                type="checkbox"
+                                id="sink"
+                            >
+
+                            <span class="service-icon">
+                                🚰
+                            </span>
+
+                            <span class="service-info">
+
+                                <strong>
+                                    Установка раковины
+                                </strong>
+
+                                <small>
+                                    от 12 000 ₸
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="service">
+
+                            <input
+                                type="checkbox"
+                                id="shower"
+                            >
+
+                            <span class="service-icon">
+                                🚿
+                            </span>
+
+                            <span class="service-info">
+
+                                <strong>
+                                    Установка душа
+                                </strong>
+
+                                <small>
+                                    от 20 000 ₸
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="service">
+
+                            <input
+                                type="checkbox"
+                                id="bath"
+                            >
+
+                            <span class="service-icon">
+                                🛁
+                            </span>
+
+                            <span class="service-info">
+
+                                <strong>
+                                    Установка ванны
+                                </strong>
+
+                                <small>
+                                    от 25 000 ₸
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="service">
+
+                            <input
+                                type="checkbox"
+                                id="washing"
+                            >
+
+                            <span class="service-icon">
+                                🧺
+                            </span>
+
+                            <span class="service-info">
+
+                                <strong>
+                                    Стиральная машина
+                                </strong>
+
+                                <small>
+                                    от 10 000 ₸
+                                </small>
+
+                            </span>
+
+                        </label>
+
+
+                        <label class="service">
+
+                            <input
+                                type="checkbox"
+                                id="boiler"
+                            >
+
+                            <span class="service-icon">
+                                🔥
+                            </span>
+
+                            <span class="service-info">
+
+                                <strong>
+                                    Установка бойлера
+                                </strong>
+
+                                <small>
+                                    от 25 000 ₸
+                                </small>
+
+                            </span>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ТРУБЫ -->
+
+                <div class="form-block">
+
+                    <label>
+                        🔧 Работы с трубами
+                    </label>
+
+                    <div class="extra-options">
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                id="water-pipes"
+                            >
+
+                            <span>
+                                Разводка водоснабжения
+                            </span>
+
+                            <strong>
+                                + от 80 000 ₸
+                            </strong>
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                id="sewerage"
+                            >
+
+                            <span>
+                                Разводка канализации
+                            </span>
+
+                            <strong>
+                                + от 60 000 ₸
+                            </strong>
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                id="collector"
+                            >
+
+                            <span>
+                                Установка коллектора
+                            </span>
+
+                            <strong>
+                                + от 35 000 ₸
+                            </strong>
+
+                        </label>
+
+
+                        <label>
+                            <input
+                                type="checkbox"
+                                id="filters"
+                            >
+
+                            <span>
+                                Фильтры воды
+                            </span>
+
+                            <strong>
+                                + от 20 000 ₸
+                            </strong>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ДОПОЛНИТЕЛЬНЫЕ РАБОТЫ -->
+
+                <div class="form-block">
+
+                    <label>
+                        🛠 Дополнительные работы
+                    </label>
+
+                    <div class="extra-options">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="demolition"
+                            >
+
+                            <span>
+                                Демонтаж старой сантехники
+                            </span>
+
+                            <strong>
+                                + 15 000 ₸
+                            </strong>
+
+                        </label>
+
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="installation"
+                            >
+
+                            <span>
+                                Монтаж инсталляции
+                            </span>
+
+                            <strong>
+                                + 30 000 ₸
+                            </strong>
+
+                        </label>
+
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="mixer"
+                            >
+
+                            <span>
+                                Установка смесителей
+                            </span>
+
+                            <strong>
+                                + 8 000 ₸
+                            </strong>
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- КНОПКА -->
+
+                <button
+                    id="calculate"
+                    class="calculate-button"
+                >
+                    Рассчитать стоимость
+                    <span>→</span>
+                </button>
+
+
+                <!-- РЕЗУЛЬТАТ -->
+
+                <div
+                    id="result"
+                    class="result"
+                >
+
+                    <span>
+                        Предварительная стоимость
+                    </span>
+
+                    <strong>
+                        0 ₸
+                    </strong>
+
+                    <small>
+                        Итоговая стоимость зависит от сложности работ
+                        и стоимости материалов.
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ПРЕИМУЩЕСТВА -->
+
+        <section class="advantages">
+
+            <div class="advantage">
+
+                <span>⚡</span>
+
+                <h3>
+                    Быстрый расчёт
+                </h3>
+
+                <p>
+                    Узнайте ориентировочную стоимость
+                    прямо на сайте.
+                </p>
+
+            </div>
+
+
+            <div class="advantage">
+
+                <span>🔧</span>
+
+                <h3>
+                    Опытные мастера
+                </h3>
+
+                <p>
+                    Качественное выполнение
+                    сантехнических работ.
+                </p>
+
+            </div>
+
+
+            <div class="advantage">
+
+                <span>📍</span>
+
+                <h3>
+                    Выезд на объект
+                </h3>
+
+                <p>
+                    Оценим объём работ непосредственно
+                    на месте.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ФОРМА ЗАЯВКИ -->
+
+        <section class="contact-section">
+
+            <div class="contact-content">
+
+                <span class="section-label">
+                    БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+                </span>
+
+                <h2>
+                    Хотите точный расчёт?
+                </h2>
+
+                <p>
+                    Оставьте контакты. Специалист свяжется
+                    с вами и уточнит детали заказа.
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <form id="contactForm">
+
+                    <div class="input-group">
+
+                        <label for="name">
+                            Ваше имя
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Например, Александр"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="phone">
+                            Номер телефона
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="+7 (___) ___-__-__"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="city">
+                            Город
+                        </label>
+
+                        <input
+                            type="text"
+                            id="city"
+                            placeholder="Например, Караганда"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="submit-button"
+                    >
+                        📲 Получить расчёт
+                    </button>
+
+                    <p class="privacy">
+                        Ваши данные используются только для связи
+                        по заявке.
+                    </p>
+
+                </form>
+
+
+                <div
+                    id="formSuccess"
+                    class="form-success"
+                >
+                    ✓ Заявка отправлена!
+                    <br>
+                    Мы свяжемся с вами в ближайшее время.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <div>
+                🔧 Сантехнические работы
+            </div>
+
+            <p>
+                Калькулятор предварительной стоимости
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
